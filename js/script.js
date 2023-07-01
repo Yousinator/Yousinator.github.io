@@ -105,7 +105,7 @@ function sendmail() {
 
   // Open the default email client with pre-filled values
   window.location.href =
-    "mailto:youremail@example.com?subject=" +
+    "mailto:y.omusabeh@gmail.com?subject=" +
     encodeURIComponent(subject) +
     "&body=" +
     encodeURIComponent(body);
