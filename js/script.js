@@ -46,11 +46,15 @@ ScrollReveal({
 });
 ScrollReveal().reveal(".home-content,.heading", { origin: "top" });
 ScrollReveal().reveal(
-  ".home-img, .services-container, .projects-box, .contact form",
+  ".home-img, .services-container, .projects-box, .contact form,.timeline",
   { origin: "bottom" }
 );
-ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+ScrollReveal().reveal(".home-content h1, .about-img,.container.left ", {
+  origin: "left",
+});
+ScrollReveal().reveal(".home-content p, .about-content,.container.right", {
+  origin: "right",
+});
 /*==================== typed js ====================*/
 const typed = new Typed(".multiple-text", {
   strings: [
