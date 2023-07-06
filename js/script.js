@@ -39,7 +39,7 @@ window.onscroll = () => {
 
 /*==================== scroll reveal ====================*/
 ScrollReveal({
-  reset: true,
+  reset: false,
   distance: "80px",
   duration: 2000,
   delay: 200,
@@ -61,6 +61,7 @@ const typed = new Typed(".multiple-text", {
     "AI and Data Science Student",
     "Data Scientist",
     "Machine Learning Student",
+    "Market Research and Analysis Intern",
   ],
   typeSpeed: 100,
   backSpeed: 100,
