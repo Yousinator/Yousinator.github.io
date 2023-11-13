@@ -1,265 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yousef Musabeh Portfolio</title>
+    <link rel="icon" type="images/png" href="images/logo.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yousef Musabeh Portfolio</title>
-  <link rel="icon" type="images/png" href="images/logo.png" />
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- box icons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <!-- custom css -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <!-- header design -->
-  <header class="header">
-    <a href="#" class="logo">Yousef <span>Musabeh</span></a>
-
-    <i class='bx bx-menu' id="menu-icon"></i>
-
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#projects">My Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <!-- home section design -->
-  <section class="home" id="home">
-    <div class="home-content">
-      <h3>Hey There! I am</h3>
-      <h1>Yousef Musabeh</h1>
-      <h3>I'm a <span class="multiple-text"></span></h3>
-      <p>an enthusiastic and motivated individual based in Amman, Jordan. At just 18 years old, 
-        I am an intern @Globitel, CSC HTU Event Co-Manager, and EMC HTU Technical Trainer.
-      </p>
-
-      <div class="social-media">
-        <a href="https://github.com/Yousinator" <i class='bx bxl-github'></i><span>Yousinator</span></a>
-        <a href="https://www.linkedin.com/in/yousef-musabeh/" <i class='bx bxl-linkedin'></i><span>Yousef Musabeh</span></a>
-        <a href="https://twitter.com/OverpoweredOG_" <i class='bx bxl-twitter'></i><span>OverpoweredOG_</span></a>
-        <a href="https://medium.com/@y.omusabeh/about" <i class='bx bxl-medium'></i><span>Yousef Musabeh</span></a>
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <div class="logo-wrapper">
+        <img class="slogo" src="images/logo.png" href="#" />
+        <a href="#" class="logo">Yousef <span>Musabeh</span></a>
       </div>
-      <a href="resources/resume.pdf" download="download" class="btn">Download CV</a>
-      <div href = "#about" class="mouse"></div>
-      <div class="scroller">Scroll Down for More</div>  
-    </div>
-    <div class="home-img">
-      <img src="images/home2.png"></img>
-    </div>
-    
-  </section>
 
-  <!-- about section design -->
-  <section class="about" id="about">
-    <div class = "about-img">
-      <img src="images/about2.png" alt="Image">
-    </div>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-    <div class="about-content">
-      <h2 class="heading">About<span> Me</span></h2>
-      <h3>AI and Data Science Student</h3>
-      <p>My name is Yousef Musabeh an ambitious and dedicated 18-year-old AI and Data Science 
-        undergraduate student at Hussein Technical University. Passionate about leveraging data-driven 
-        insights to drive business decisions, I am currently honing my skills as a Market and Research 
-        Analysis Intern @Globitel, Technical Trainer at EMC HTU, and Event Co-Manager at CSC HTU.
-        Committed to expanding my expertise in Machine Learning, I am pursuing individual learning paths
-        alongside my academic curriculum. Proficient in Python, C, and Java, I am equipped with strong 
-        programming skills to implement machine learning algorithms and develop innovative solutions. 
-        
-      </p>
-    </div>
-  </section>
-  <section class="timeline-section" id="timeline-section">
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#timeline-section">Expereince</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <!-- home section design -->
+    <section class="home" id="home">
+      <video class="video-bg" autoplay muted loop>
+        <source src="images/home-vid.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="home-content">
+        <h3>My name is</h3>
+        <h1>Yousef Musabeh</h1>
+        <h3>I'm a <span class="multiple-text"></span></h3>
+        <p>
+          An enthusiastic and motivated professional based in Amman, Jordan. At
+          the age of 19, I'm currently a Co-Founder & CEO @AuspicesAI, VP @HTU
+          Cyber Security Club. Passion drives my journey in revolutionizing
+          cybersecurity through the power of AI.
+        </p>
+
+        <div class="social-media">
+          <a href="https://github.com/Yousinator"
+            ><i class="bx bxl-github"></i><span>Yousinator</span></a
+          >
+          <a href="https://www.linkedin.com/in/yousef-musabeh/"
+            ><i class="bx bxl-linkedin"></i><span>Yousef Musabeh</span></a
+          >
+          <a href="https://twitter.com/OverpoweredOG_"
+            ><i class="bx bxl-twitter"></i><span>OverpoweredOG_</span></a
+          >
+          <a href="https://medium.com/@y.omusabeh/about"
+            ><i class="bx bxl-medium"></i><span>Yousef Musabeh</span></a
+          >
+        </div>
+        <a href="resources/resume.pdf" download="download" class="btn"
+          >Download CV</a
+        >
+        <div>
+          <div class="mouse"></div>
+          <div class="scroller">Scroll Down for More</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/logo.png" alt="Image" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">Who am I?</h2>
+        <h3>
+          Vice President <span>@CSC HTU</span> | Co-Founder & CEO
+          <span>@AuspicesAI</span>
+        </h3>
+        <p>
+          Yousef Musabeh here, an enthusiastic individual passionately immersed
+          in the worlds of AI and cybersecurity. Currently, at 19, I'm wearing
+          multiple hats: leading as Co-Founder & CEO of AuspicesAI, VP at HTU
+          Cyber Security Club, and contributing as an AI R&D Lead.<br /><br />My
+          dedication lies in leveraging data-driven insights to fortify business
+          decisions, previously fine-tuning these skills as a Market and
+          Research Analysis Intern @Globitel. With a keen interest in Machine
+          Learning, I'm actively expanding my expertise through personal
+          learning paths alongside my academic pursuits.<br />
+          <br />
+          Proficient in Python, C, TypeScript and Java, my strong programming
+          skills enable the implementation of machine learning algorithms for
+          innovative solutions."
+        </p>
+      </div>
+    </section>
+    <section class="timeline-section" id="timeline-section">
+      <h2 class="heading">My <span>Expereince</span></h2>
       <div class="timeline">
+        <div class="container left">
+          <div class="content" id="timeline-left">
+            <h2>CSC HTU</h2>
+            <h3>Event Co-Manager</h3>
+            <h3><span>May 2023 - Sep 2023</span></h3>
+            <p>
+              As an Event Co-Manager at the HTU Cyber Security Club, I play a
+              crucial role in organizing engaging and informative events related
+              to cybersecurity. Working closely with the club's team, I
+              contribute to the planning, coordination, and execution of various
+              activities such as workshops, seminars, and competitions. These
+              events aim to raise awareness about cybersecurity, educate
+              students on best practices, and promote a secure digital
+              environment.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>Globitel</h2>
+            <h3>Market Reasearch and Analysis Intern</h3>
+            <h3><span>Jun 2023 - Sep 2023</span></h3>
+            <p>
+              As a Market and Research Analysis Intern at Globitel, I am
+              actively involved in collecting, analyzing, and interpreting data
+              to uncover valuable insights and trends in the market. I assist
+              the team in conducting market research, competitor analysis, and
+              customer segmentation to support strategic decision-making. I
+              utilize my data science and analytical skills to extract
+              meaningful information from various data sources. .
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>EMC HTU</h2>
+            <h3>Technical Trainer</h3>
+            <h3><span>Dec 2022 - Dec 2023</span></h3>
 
-      <div class="container left">
-        <div class="content">
-          <h2>Hussein Technical University</h2>
-          <h3>AI & Data Science</h3>
-          <h3><span>Sep 2022 - Aug 2025 (Expected)</span></h3>
-          
-          <p>I am currently pursuing a Bachelor's degree in AI and Data Science at Hussein Technical University (HTU). This comprehensive program equips me with a strong foundation in the core principles of artificial intelligence and data science, preparing me to tackle the challenges and opportunities in these rapidly evolving fields.</p>
+            <p>
+              Within the Enlighten Me Club at Hussein Technical University
+              (HTU), I serve as a Technical Trainer. In this role, I share my
+              knowledge and expertise in programming with less fortunate
+              children. I conduct training sessions to help students understand
+              technical concepts and develop practical skills. By fostering a
+              collaborative learning environment, I aim to empower my peers and
+              inspire their interest in the field.
+            </p>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            <h2>AucpicesAI</h2>
+            <h3>Co-Founder & CEO</h3>
+            <h3><span>Jun 2023 - Present</span></h3>
+
+            <p>
+              As the Co-Founder & CEO of AuspicesAI, I lead a dynamic team in
+              our mission to revolutionize the cybersecurity landscape through
+              the power of artificial intelligence. In this role, I am
+              responsible for:
+
+              <br /><br />1. Setting the strategic direction and long-term
+              vision for AuspicesAI. <br /><br />2. Overseeing the development
+              of AI-driven cybersecurity solutions and services that address the
+              evolving threats faced by businesses today. <br /><br />3.
+              Managing day-to-day operations, including team coordination,
+              budgeting, and resource allocation to ensure the successful
+              execution of our business plan. <br /><br />4. Building strategic
+              partnerships with industry leaders, organizations, and
+              institutions to drive innovation. <br /><br />5. Working closely
+              with clients to understand their needs and ensuring our solutions
+              meet and exceed their expectations.
+            </p>
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            <h2>CSC HTU</h2>
+            <h3>Vice President</h3>
+            <h3><span>Sep 2023 - Present</span></h3>
+
+            <p>
+              Within the Enlighten Me Club at Hussein Technical University
+              (HTU), I serve as a Technical Trainer. In this role, I share my
+              knowledge and expertise in programming with less fortunate
+              children. I conduct training sessions to help students understand
+              technical concepts and develop practical skills. By fostering a
+              collaborative learning environment, I aim to empower my peers and
+              inspire their interest in the field.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="container right">
-        <div class="content">
-          <h2>EMC HTU</h2>
-          <h3>Technical Trainer</h3>
-          <h3><span>Dec 2022 - Present</span></h3>
-          
-          <p>Within the Enlighten Me Club at Hussein Technical University (HTU), I serve as a Technical Trainer. In this role, 
-          I share my knowledge and expertise in programming with less fortunate children. I conduct training sessions to help 
-          students understand technical concepts and develop practical skills. By fostering a collaborative learning environment,
-          I aim to empower my peers and inspire their interest in the field.</p>
+      <div class="experience-container">
+        <div class="experience-box">
+          <i class="bx bxl-python"></i>
+          <h3>Python</h3>
+        </div>
+
+        <div class="experience-box">
+          <i class="bx bx-table"></i>
+          <h3>Pandas</h3>
+        </div>
+
+        <div class="experience-box">
+          <i class="bx bxl-typescript"></i>
+          <h3>TypeScript</h3>
+        </div>
+        <div class="experience-box">
+          <i class="bx bxl-tux"></i>
+          <h3>Linux</h3>
+        </div>
+        <div class="experience-box">
+          <i class="bx bxl-aws"></i>
+          <h3>AWS</h3>
         </div>
       </div>
-
-      <div class="container left" >
-        <div class="content" id="timeline-left">
-          <h2>CSC HTU</h2>
-          <h3>Event Co-Manager</h3>
-          <h3><span>May 2023 - Present</span></h3>
-          <p>As an Event Co-Manager at the HTU Cyber Security Club, I play a crucial role in organizing engaging and 
-          informative events related to cybersecurity. Working closely with the club's team, I contribute to the planning, 
-          coordination, and execution of various activities such as workshops, seminars, and competitions. These events aim 
-          to raise awareness about cybersecurity, educate students on best practices, and promote a secure digital environment.
+    </section>
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-line-chart"></i>
+          <h3>Data Analytics</h3>
+          <p>
+            I am an experienced programmer proficient in Python. I have a deep
+            knowledge in Python especially data science libraries. Open to
+            internships and entry-level positions where I can make a positive
+            impact.
           </p>
+          <a href="https://www.linkedin.com/in/yousef-musabeh/" class="btn"
+            >Read More</a
+          >
         </div>
-      </div>
-
-      <div class="container right">
-        <div class="content">
-          <h2>Globitel</h2>
-          <h3>Market Reasearch and Analysis Intern</h3>
-          <h3><span>Jun 2023 - Present</span></h3>
-          <p>As a Market and Research Analysis Intern at Globitel, I am actively involved in collecting, analyzing, and 
-            interpreting data to uncover valuable insights and trends in the market. I assist the team in conducting market
-            research, competitor analysis, and customer segmentation to support strategic decision-making. 
-            I utilize my data science and analytical skills to extract meaningful information from various data sources. 
-            .</p>
-        </div>
-      </div>
-
-      </div>
-      </section>
-  <!-- services section design -->
-  <section class="services" id="services">
-
-    <h2 class="heading">My <span>Services</span></h2>
-    <div class="services-container">
-
-      <div class="services-box">
-        <i class='bx bxl-python'></i>
-        <h3>Python</h3>
-        <p>I am an experienced programmer proficient in Python. I have a deep knowledge in Python especially data science 
-          libraries. Open to internships and entry-level positions where I can make a positive impact.</p>
-        <a href="https://www.linkedin.com/in/yousef-musabeh/" class="btn">Read More</a>
-      </div>
-      
-      <div class="services-box">
-        <i class='bx bxs-bar-chart-alt-2'></i>
-        <h3>Data Science</h3>
-        <p>Looking for opportunities to apply my skills and knowledge in the field of Artificial Intelligence and Data Science. 
-        Open to internships and entry-level positions where I can contribute to data-driven decision-making and make a positive impact.</p>
-        <a href="https://www.linkedin.com/in/yousef-musabeh/" class="btn">Read More</a>
-      </div>
 
         <div class="services-box">
-        <i class='bx bx-code-alt'></i>
-        <h3>Coding Tutor</h3>
-        <p>Experienced programmer proficient in Python, C, and Java, with a strong interest in Machine Learning. I offer personal programming 
-        lessons for individuals and organizations in these languages.</p>
-        <a href="https://www.linkedin.com/in/yousef-musabeh/" class="btn">Read More</a>
+          <i class="bx bxs-network-chart"></i>
+          <h3>Machine Learning</h3>
+          <p>
+            Looking for opportunities to apply my skills and knowledge in the
+            field of Artificial Intelligence and Data Science. Open to
+            internships and entry-level positions where I can contribute to
+            data-driven decision-making and make a positive impact.
+          </p>
+          <a href="https://www.linkedin.com/in/yousef-musabeh/" class="btn"
+            >Read More</a
+          >
         </div>
-    </div>
 
-  </section>
-
-  <!-- projects section design -->
-  <section class="projects" id="projects">
-    <h2 class="heading">My Latest <span>Projects</span></h2>
-    <div class="projects-container">
-
-      <div class="projects-box">
-        <img src="images/portfolio1.jpg" alt="">
-        <div class="projects-layer">
-          <h4>Java0x01</h4>
-          <p>Java0x01 is a Teach to Learn project that Saud Smadi and I started while studying for our university Java course</p>
-          <a href="https://github.com/smadi0x86/Java0x01"><i class='bx bx-link' ></i></a>
-        </div>
-      </div>
-      
-      <div class="projects-box">
-        <img src="images/portfolio2.jpg" alt="">
-        <div class="projects-layer">
-          <h4>DMV Project</h4>
-          <p>My Programming course final project. Currently working to add a database to make it complete.(In Progress)</p>
-          <a href="https://github.com/Yousinator/DMV"><i class='bx bx-link' ></i></a>
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Experienced programmer proficient in Python, C, and Java, with a
+            strong interest in Machine Learning. I offer personal programming
+            lessons for individuals and organizations in these languages.
+          </p>
+          <a href="https://www.linkedin.com/in/yousef-musabeh/" class="btn"
+            >Read More</a
+          >
         </div>
       </div>
-      
-      <div class="projects-box">
-        <img src="images/portfolio3.jpg" alt="">
-        <div class="projects-layer">
-          <h4>Math for Computing</h4>
-          <p>Mathematical Algorithms including Hashing, Encryption, and much more all in one project.</p>
-          <a href="https://github.com/Yousinator/Math-For-Computing"><i class='bx bx-link' ></i></a>
+    </section>
+
+    <!-- projects section design -->
+    <section class="projects" id="projects">
+      <h2 class="heading">My Latest <span>Projects</span></h2>
+      <div class="projects-container">
+        <div class="projects-box">
+          <img src="images/portfolio1.jpg" alt="" />
+          <div class="projects-layer">
+            <h4>Java0x01</h4>
+            <p>
+              Java0x01 is a Teach to Learn project that Saud Smadi and I started
+              while studying for our university Java course
+            </p>
+            <a href="https://github.com/smadi0x86/Java0x01"
+              ><i class="bx bx-link"></i
+            ></a>
+          </div>
         </div>
-      </div>
-      
-      <div class="projects-box">
-        <img src="images/portfolio4.jpg" alt="">
-        <div class="projects-layer">
-          <h4>Soon</h4>
-          <p>Soon</p>
-          <a href="#"><i class='bx bx-link' ></i></a>
+
+        <div class="projects-box">
+          <img src="images/portfolio2.jpg" alt="" />
+          <div class="projects-layer">
+            <h4>DMV Project</h4>
+            <p>
+              My Programming course final project. Currently working to add a
+              database to make it complete.(In Progress)
+            </p>
+            <a href="https://github.com/Yousinator/DMV"
+              ><i class="bx bx-link"></i
+            ></a>
+          </div>
         </div>
-      </div>
-      
-      <div class="projects-box">
-        <img src="images/portfolio5.jpg" alt="">
-        <div class="projects-layer">
-          <h4>Soon</h4>
-          <p>Soon</p>
-          <a href="#"><i class='bx bx-link' ></i></a>
+
+        <div class="projects-box">
+          <img src="images/portfolio3.jpg" alt="" />
+          <div class="projects-layer">
+            <h4>Math for Computing</h4>
+            <p>
+              Mathematical Algorithms including Hashing, Encryption, and much
+              more all in one project.
+            </p>
+            <a href="https://github.com/Yousinator/Math-For-Computing"
+              ><i class="bx bx-link"></i
+            ></a>
+          </div>
         </div>
-      </div>
-      
-      <div class="projects-box">
-        <img src="images/portfolio6.jpg" alt="">
-        <div class="projects-layer">
-          <h4>Soon</h4>
-          <p>Soon</p>
-          <a href="#"><i class='bx bx-link' ></i></a>
+
+        <div class="projects-box"></div>
+
+        <div class="projects-box">
+          <img src="images/portfolio4.jpg" alt="" />
+          <div class="projects-layer">
+            <h4>AuspicesAI Website</h4>
+            <p>
+              A website I built for my Startup -AuspicesAI-. I built the
+              front-end using react and TypeScript
+            </p>
+            <a href="https://www.auspicesai.com/"><i class="bx bx-link"></i></a>
+          </div>
         </div>
+
+        <div class="projects-box"></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- contact section design -->
-  <section class="contact" id="contact">
-    <h2 class="heading">Contact <span>Me</span></h2>
-    <form action="#">
-      <div class="input-box">
-        <input type="text" id="name" placeholder="Full Name">
-        <input type="email" id="email" placeholder="Your Email">
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Full Name" />
+          <input type="email" id="email" placeholder="Your Email" />
+        </div>
+        <div class="input-box">
+          <input type="text" id="number" placeholder="Phone Number" />
+          <input type="text" id="subject" placeholder="Subject" />
+        </div>
+        <textarea
+          name=""
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <button onclick="sendmail()" class="btn">Send</button>
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2023 by Yousef Musabeh | All Rights Reserved.</p>
       </div>
-      <div class="input-box">
-        <input type="text" id="number" placeholder="Phone Number">
-        <input type="text" id="subject" placeholder="Subject">
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
       </div>
-      <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
-      <button onclick="sendmail()" class="btn">Send</button>
-    </form>
-  </section>
+    </footer>
 
-  <!-- footer design -->
-  <footer class="footer">
-    <div class="footer-text">
-      <p>Copyright &copy; 2023 by Yousef Musabeh | All Rights Reserved.</p>
-    </div>
-    <div class="footer-iconTop">
-      <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
-    </div>
-  </footer>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- scroll reveal -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-
-  <!-- typed js -->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <!-- custom js -->
-  <script src="js/script.js"></script>
-</body>
-
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>

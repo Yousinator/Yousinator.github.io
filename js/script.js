@@ -58,10 +58,10 @@ ScrollReveal().reveal(".home-content p, .about-content,.container.right", {
 /*==================== typed js ====================*/
 const typed = new Typed(".multiple-text", {
   strings: [
+    "Co-Founder & CEO",
+    "Vice President",
+    "Machine Learning Engineer",
     "AI and Data Science Student",
-    "Data Scientist",
-    "Machine Learning Student",
-    "Market Research and Analysis Intern",
   ],
   typeSpeed: 100,
   backSpeed: 100,
