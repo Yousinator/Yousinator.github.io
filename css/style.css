@@ -310,6 +310,7 @@ span {
   left: 50%;
   margin-left: -3px;
   z-index: -1;
+  border-radius: 10px;
 }
 
 /* Container around content */
@@ -319,6 +320,7 @@ span {
   background-color: inherit;
   width: 50%;
   margin-top: 50px;
+  padding-top: 40px;
 }
 
 /* General style for the circles */
@@ -333,6 +335,7 @@ span {
   top: 0;
   border-radius: 50%;
   z-index: 1;
+  margin-top: 40px;
 }
 
 /* Specific images for each circle */
@@ -378,6 +381,7 @@ span {
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent var(--bg-color);
   margin-right: 5px;
+  margin-top: 40px;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -393,6 +397,7 @@ span {
   border-width: 10px 10px 10px 0;
   border-color: transparent var(--bg-color) transparent transparent;
   margin-left: 5px;
+  margin-top: 40px;
 }
 
 /* Fix the circle for containers on the right side */
