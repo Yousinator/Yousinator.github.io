@@ -780,6 +780,9 @@ span {
   .projects h2 {
     margin-bottom: 3rem;
   }
+  .timeline-section {
+    max-width: 768px;
+  }
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -789,6 +792,9 @@ span {
   .projects-container {
     grid-template-columns: 1fr;
   }
+  .timeline-section {
+    max-width: 617px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -797,6 +803,9 @@ span {
   }
   .contact form .input-box input {
     width: 100%;
+  }
+  .timeline-section {
+    max-width: 450px;
   }
 }
 
@@ -813,5 +822,8 @@ span {
   .footer p {
     text-align: center;
     margin-top: 2rem;
+  }
+  .timeline-section {
+    max-width: 365px;
   }
 }
