@@ -451,9 +451,9 @@ span {
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
-    border: medium solid var(--main-color);
+    border: medium solid var(--bg-color);
     border-width: 10px 10px 10px 0;
-    border-color: transparent var(--main-color) transparent transparent;
+    border-color: transparent var(--bg-color) transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
@@ -877,10 +877,4 @@ body {
   width: 100vw;
   max-width: 100%; /* Prevents horizontal overflow if content exceeds viewport width */
   overflow-x: hidden; /* Hide horizontal scrollbar */
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
