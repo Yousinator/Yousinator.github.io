@@ -786,6 +786,17 @@ span {
   .projects-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .right::after {
+    left: -0.2%;
+  }
+  .left::after {
+    left: -0.2%;
+  }
+  .left::before {
+    right: 0;
+    left: 66px;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 617px) {
@@ -794,6 +805,17 @@ span {
   }
   .timeline-section {
     max-width: 617px;
+  }
+  .right::after {
+    left: -0.2%;
+  }
+  .left::after {
+    left: -0.2%;
+  }
+  .left::before {
+    right: 0;
+    left: 66px;
+    z-index: -1;
   }
 }
 
@@ -806,6 +828,17 @@ span {
   }
   .timeline-section {
     max-width: 450px;
+  }
+  .right::after {
+    left: -0.2%;
+  }
+  .left::after {
+    left: -0.2%;
+  }
+  .left::before {
+    right: 0;
+    left: 66px;
+    z-index: -1;
   }
 }
 
@@ -826,4 +859,28 @@ span {
   .timeline-section {
     max-width: 365px;
   }
+  .right::after {
+    left: -0.2%;
+  }
+  .left::after {
+    left: -0.2%;
+  }
+  .left::before {
+    right: 0;
+    left: 66px;
+    z-index: -1;
+  }
+}
+
+/* Ensure body takes full width and no horizontal overflow occurs */
+body {
+  width: 100vw;
+  max-width: 100%; /* Prevents horizontal overflow if content exceeds viewport width */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
