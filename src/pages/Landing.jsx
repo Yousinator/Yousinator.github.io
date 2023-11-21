@@ -8,12 +8,21 @@ function Landing() {
 
   useEffect(() => {
     const handleVideoLoad = () => setLoading(false);
-
     const videoEl = videoRef.current;
     videoEl.addEventListener("loadeddata", handleVideoLoad);
 
     return () => videoEl.removeEventListener("loadeddata", handleVideoLoad);
   }, []);
+
+  useEffect(() => {
+    if (loading) {
+      // Disable scrolling and hide scrollbar
+      document.body.style.overflow = "hidden";
+    } else {
+      // Enable scrolling
+      document.body.style.overflow = "auto";
+    }
+  }, [loading]);
 
   return (
     <>
@@ -23,7 +32,14 @@ function Landing() {
         </div>
       )}
 
-      <video className="video-bg" autoPlay muted loop ref={videoRef}>
+      <video
+        className="video-bg"
+        autoPlay
+        muted
+        loop
+        ref={videoRef}
+        preload="auto"
+      >
         <source src="/home-vod1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
