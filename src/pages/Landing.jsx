@@ -1,10 +1,29 @@
+import React, { useState, useEffect, useRef } from "react";
 import "../index.css";
 import Typed from "react-typed";
 
 function Landing() {
+  const [loading, setLoading] = useState(true);
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const handleVideoLoad = () => setLoading(false);
+
+    const videoEl = videoRef.current;
+    videoEl.addEventListener("loadeddata", handleVideoLoad);
+
+    return () => videoEl.removeEventListener("loadeddata", handleVideoLoad);
+  }, []);
+
   return (
     <>
-      <video className="video-bg" autoPlay muted loop>
+      {loading && (
+        <div className="loader-overlay">
+          <div className="loader"></div>
+        </div>
+      )}
+
+      <video className="video-bg" autoPlay muted loop ref={videoRef}>
         <source src="/home-vod1.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
