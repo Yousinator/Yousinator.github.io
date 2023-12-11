@@ -85,17 +85,17 @@ function Experience() {
 
             <p>
               Within the Enlighten Me Club at Hussein Technical University
-              (HTU), I serve as a Technical Trainer. In this role:
+              (HTU), I served as a Technical Trainer. In this role:
               <br />
               <br />
-              1. I share my knowledge and expertise in programming with less
+              1. I shared my knowledge and expertise in programming with less
               fortunate children. <br />
               <br />
-              2. I conduct training sessions to help students understand
+              2. I conducted training sessions to help students understand
               technical concepts and develop practical skills.
               <br />
               <br />
-              3. Empowering the children and inspire their interest in the
+              3. Empowered the children and inspired their interest in the
               field, by fostering a collaborative learning environment.
             </p>
           </div>
@@ -179,8 +179,8 @@ function Experience() {
         </div>
 
         <div className="experience-box">
-          <i className="bx bx-table"></i>
-          <h3>Pandas</h3>
+          <i className="bx bxl-git"></i>
+          <h3>Git</h3>
         </div>
 
         <div className="experience-box">
