@@ -60,13 +60,23 @@ function Navbar() {
 
       <nav className="navbar">
         <a href="#home" className="active">
-          Home
+          <i className="bx bxs-home"></i> Home
         </a>
-        <a href="#about">About</a>
-        <a href="#timeline-section">Expereince</a>
-        <a href="#services">Expertise</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a className="nav-link" href="#about">
+          <i className="bx bxs-info-circle"></i> About
+        </a>
+        <a href="#timeline-section">
+          <i className="bx bxs-briefcase"></i> Expereince
+        </a>
+        <a href="#services">
+          <i className="bx bxs-brain"></i> Expertise
+        </a>
+        <a href="#projects">
+          <i className="bx bxs-cog"></i> Projects
+        </a>
+        <a href="#contact">
+          <i className="bx bxs-phone"></i> Contact
+        </a>
       </nav>
     </>
   );

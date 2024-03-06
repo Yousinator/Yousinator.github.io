@@ -4,7 +4,14 @@ function Footer() {
   return (
     <>
       <div className="footer-text">
-        <p>Copyright &copy; 2023 by Yousef Musabeh | All Rights Reserved.</p>
+        <div className="logo-wrapper">
+          <a href="#">
+            <img className="slogo" src="/logo.png" alt="Logo" />
+          </a>
+        </div>
+        <p>
+          Built by <span>Yousef Musabeh</span> | All Rights Reserved.
+        </p>
       </div>
       <div className="footer-iconTop">
         <a href="#home">

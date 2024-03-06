@@ -1,19 +1,29 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../index.css";
 import Typed from "react-typed";
+import { Canvas } from "@react-three/fiber";
+import { useLoader, useFrame } from "@react-three/fiber";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import * as THREE from "three";
 
 function Landing() {
   const [loading, setLoading] = useState(true);
-  const videoRef = useRef(null);
 
-  useEffect(() => {
-    const handleVideoLoad = () => setLoading(false);
-    const videoEl = videoRef.current;
-    videoEl.addEventListener("loadeddata", handleVideoLoad);
+  const AnimatedModel = () => {
+    const modelRef = useRef();
+    const gltf = useLoader(GLTFLoader, "/robot_playground.glb");
+    const mixer = useRef(new THREE.AnimationMixer(null)).current;
 
-    return () => videoEl.removeEventListener("loadeddata", handleVideoLoad);
-  }, []);
+    useEffect(() => {
+      if (gltf.animations.length > 0) {
+        mixer.clipAction(gltf.animations[0], modelRef.current).play();
+      }
+    }, [gltf.animations]);
 
+    useFrame((_, delta) => mixer.update(delta));
+
+    return <primitive object={gltf.scene} ref={modelRef} dispose={null} />;
+  };
   useEffect(() => {
     if (loading) {
       // Disable scrolling and hide scrollbar
@@ -26,36 +36,35 @@ function Landing() {
 
   return (
     <>
-      {loading && (
+      {/* {loading && (
         <div className="loader-overlay">
           <div className="loader"></div>
         </div>
-      )}
-
-      <video
-        className="video-bg"
-        autoPlay
-        muted
-        loop
-        ref={videoRef}
-        preload="auto"
-      >
-        <source src="/home-vod1.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
+      )} */}
       <div className="home-content">
-        <h3>Hey There! I'm</h3>
-        <h1>Yousef Musabeh</h1>
+        <div className="model-container">
+          <Canvas
+            camera={{ position: [0, 1, 3], fov: 100 }}
+            style={{ height: "calc(100vh - 200px)" }}
+          >
+            <ambientLight intensity={0.5} />
+            <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
+            <pointLight position={[-10, -10, -10]} />
+            <AnimatedModel />
+          </Canvas>
+        </div>
+        <h1>
+          Hey There! I'm <span>Yousef Musabeh</span>
+        </h1>
         <h3>
           I'm a{" "}
           <span className="multiple-text">
             <Typed
               strings={[
-                "Co-Founder & CEO",
+                "Startup CEO",
                 "Vice President",
-                "Machine Learning Engineer",
-                "AI and Data Science Student",
+                "AI Software Engineer",
+                "MLOps Engineer",
               ]}
               typeSpeed={100}
               backSpeed={100}
@@ -64,12 +73,6 @@ function Landing() {
             />
           </span>
         </h3>
-        <p>
-          An enthusiastic and motivated professional based in Amman, Jordan. At
-          the age of 19, I'm currently a Co-Founder & CEO @AuspicesAI, VP @HTU
-          Cyber Security Club. Passion drives my journey in revolutionizing
-          cybersecurity through the power of AI.
-        </p>
 
         <div className="social-media">
           <a
@@ -89,14 +92,6 @@ function Landing() {
             <span>Yousef Musabeh</span>
           </a>
           <a
-            href="https://twitter.com/OverpoweredOG_"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="bx bxl-twitter"></i>
-            <span>OverpoweredOG_</span>
-          </a>
-          <a
             href="https://medium.com/@y.omusabeh/about"
             target="_blank"
             rel="noopener noreferrer"
@@ -112,11 +107,6 @@ function Landing() {
         >
           Download CV
         </a>
-
-        <a href="#about">
-          <div className="mouse"></div>
-        </a>
-        <div className="scroller">Scroll Down for More</div>
       </div>
     </>
   );
